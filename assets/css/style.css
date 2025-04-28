@@ -1,0 +1,641 @@
+/* Light */
+@font-face {
+    font-family: 'Neue Haas Grotest';
+    src: url('../fonts/NHaasGroteskDSPro-45Lt.otf') format('opentype');
+    font-weight: 300;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Neue Haas Grotest';
+    src: url('../fonts/NHaasGroteskDSPro-55Rg.otf') format('opentype');
+    font-weight: 400;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Neue Haas Grotest';
+    src: url('../fonts/NHaasGroteskDSPro-65Md.otf') format('opentype');
+    font-weight: 500;
+}
+
+/* Semi Bold */
+@font-face {
+    font-family: 'Neue Haas Grotest';
+    src: url('../fonts/NHaasGroteskDSPro-65Md.otf') format('opentype');
+    font-weight: 600;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Neue Haas Grotest';
+    src: url('../fonts/NHaasGroteskDSPro-75Bd.otf') format('opentype');
+    font-weight: 700;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Neue Haas Grotest", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.main {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.horizontal-sliders {
+    display: flex;
+    flex-wrap: no-wrap;
+    width: 7593px;
+    /* overflow-x: hidden; */
+}
+
+.slide {
+    height: 100vh;
+}
+
+/* ------------Nav Menu---------- */
+.main {
+    position: relative;
+}
+
+.hamburger {
+    position: absolute;
+    top: 66px;
+    right: 58px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu.show {
+    display: block;
+    opacity: 1;
+}
+
+.menu.hide {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* .menu-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 100px 96px;
+    border: 1px solid #888;
+    height: 100vh;
+} */
+
+.menu-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 100px 96px;
+    border: 1px solid #888;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 66px;
+    right: 60px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-design {
+    position: relative;
+    height: 880px;
+    width: 866px;
+}
+
+/* .menu-design {
+    position: relative;
+    height: 100%;
+    width: 100%;
+} */
+
+.menu-bg {
+    position: absolute;
+    z-index: 9;
+}
+
+/* img.menu-bg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
+.menu-logo {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-list {
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.gap-in-icon {
+    margin: 0 25px;
+}
+
+.menus ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menus ul li {
+    font-family: "Neue Haas Grotest", sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.menus ul li ul {
+    padding: 0;
+}
+
+.menus ul li ul li {
+    margin: 0;
+    padding: 0;
+    font-family: "Neue Haas Grotest", sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    text-decoration: none;
+
+}
+
+.menus ul li a {
+    text-decoration: none;
+    color: #24282A;
+}
+
+.menus ul li ul li a {
+    text-decoration: none;
+    color: #24282A;
+}
+
+.social-link {
+    padding: 0;
+}
+
+.spacings {
+    padding: 80px 0 110px 0;
+}
+
+.social-link a {
+    font-size: 20px;
+    color: #24282A;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.number01,
+.number02,
+.number03 {
+    position: relative;
+}
+
+.number01::before,
+.number02::before,
+.number03::before {
+    font-family: "Neue Haas Grotest", sans-serif;
+    font-weight: 300;
+    font-style: light;
+    font-size: 22px;
+    color: #E30046;
+    top: 6px;
+    left: -40px;
+    position: absolute;
+}
+
+.number01::before {
+    content: "01";
+}
+
+.number02::before {
+    content: "02";
+}
+
+.number03::before {
+    content: "03";
+}
+
+/* ------------Home Page--------------- */
+.firstpage {
+    padding: 100px 0 100px 100px;
+    width: 925px;
+}
+
+.home-bg {
+    width: 820px;
+    height: 880px;
+    position: relative;
+}
+
+.home-bg img{
+    width: 100%;
+    height: 100%;
+}
+
+img.home-logo{
+    width: 139px;
+    height: 177px;
+    position: absolute;
+    left: 120px;
+    top: 217.5px;
+}
+
+.dot {
+    position: absolute;
+    bottom: 116px;
+    left: 120px;
+}
+
+.line-draw {
+    position: absolute;
+    top: 488px;
+    left: 120px;
+}
+
+.line {
+    position: absolute;
+    top: 556px;
+    left: 120px;
+}
+
+.line h3 {
+    font-family: "Neue Haas Grotest", sans-serif;
+    font-size: 52px;
+}
+
+.line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 38px;
+    height: 2px;
+    color: red;
+}
+
+/* ----------Last Page----------- */
+.lastpage {
+    width: 3200px;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+
+.lpbg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/home-end-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bracked {
+    position: absolute;
+    left: -60px;
+    z-index: 10;
+}
+
+.greating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email {
+    font-size: 120px;
+    font-weight: bold;
+    font-family: "Neue Haas Grotesk", sans-serif;
+    position: absolute;
+    left: 400px;
+}
+
+.outline {
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    margin-right: -20px;
+    z-index: 1;
+    position: relative;
+}
+
+.highlight {
+    color: #E30046;
+    position: relative;
+    z-index: 0;
+    margin-left: -30px;
+}
+
+.lpline {
+    width: 600px;
+    height: 2px;
+    background-color: #E30046;
+    margin: 20px 0;
+    position: absolute;
+    left: 400px;
+    bottom: 330px;
+}
+
+.contact-text {
+    color: #24282A;
+    font-family: "Neue Haas Grotest", sans-serif;
+    font-weight: 300;
+    font-size: 63px;
+    position: absolute;
+    left: 400px;
+    bottom: 260px;
+}
+
+.subtext-contact {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    gap: 0 10px;
+    left: 400px;
+    position: absolute;
+    bottom: 227px;
+}
+
+.positions {
+    left: 400px;
+    position: absolute;
+    bottom: 100px;
+}
+
+/* ----------page 1------------ */
+/* .page1 {
+    width: 575px;
+    height: 100vh;
+    position: relative;
+}
+
+.page1 {
+    width: 575px;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+.page1:hover {
+    width: 885px;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.hovers {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page1:hover .group-title,
+.page1:hover .next-arrow,
+.page1:hover .pagetitle,
+.page1:hover .pagetype {
+    transition: opacity .5s ease;
+    opacity: 1;
+}
+
+.group-title {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.next-arrow {
+    position: absolute;
+    z-index: 10;
+    right: -100px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.cirle {
+    background: #E30046;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.cirle svg {
+    margin-left: -100px;
+    font-size: 50px;
+}
+
+.pagetype,
+.pagetitle {
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.pagetitle {
+    bottom: 80px;
+    left: 60px;
+    font-family: "Neue Haas Grotesk", sans-serif;
+    color: #FFF;
+    font-size: 85px;
+    font-weight: bold;
+    line-height: 85px;
+    padding: 20px 0;
+}
+
+.pagetype {
+    bottom: 40px;
+    left: 60px;
+    height: 50px;
+    width: 280px;
+    background: #FFF;
+    color: #E30046;
+    font-size: 18px;
+    font-family: "Neue Haas Grotesk", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+} */
+/* ------------New Style----------- */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.page1 {
+    position: relative;
+    width: 575px;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    background-size: auto 100%; 
+    background-position: center;
+    flex-shrink: 0;
+}
+.page1:hover {
+    width: 835px;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.page1:hover .group-title,
+.page1:hover .next-arrow,
+.page1:hover .pagetitle,
+.page1:hover .pagetype {
+    transition: opacity .5s ease;
+    opacity: 1;
+}
+
+.group-title {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.next-arrow {
+    position: absolute;
+    z-index: 10;
+    right: -100px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.cirle {
+    background: #E30046;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.cirle svg {
+    margin-left: -100px;
+    font-size: 50px;
+}
+
+.pagetype,
+.pagetitle {
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.pagetitle {
+    bottom: 80px;
+    left: 60px;
+    font-family: "Neue Haas Grotesk", sans-serif;
+    color: #FFF;
+    font-size: 85px;
+    font-weight: bold;
+    line-height: 85px;
+    padding: 20px 0;
+    text-shadow: 2px 2px #888;
+}
+
+.pagetype {
+    bottom: 40px;
+    left: 60px;
+    height: 50px;
+    width: 280px;
+    background: #FFF;
+    color: #E30046;
+    font-size: 18px;
+    font-family: "Neue Haas Grotesk", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,137 @@
+@media screen and (min-width: 1921px) {
+    .menu-design {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    img.menu-bg {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    /* ------------Contact---------- */
+    .work-bg img{
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1920px) {
+    img.menu-bg {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    /* ------------Contact---------- */
+    .work-bg img{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .menu-list {
+        margin-top: 60px;
+    }
+
+    .menu-design {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    img.menu-bg {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .menus ul li {
+        font-size: 55px;
+    }
+
+    .spacings {
+        padding: 40px 0;
+    }
+
+    .spacings img.gap-in-icon {
+        margin: 0 10px;
+    }
+
+    /* -------Homepage---------- */
+    .home-bg {
+        height: 100%;
+    }
+
+    img.home-logo {
+        width: 110px;
+        height: 140px;
+        top: 100px;
+    }
+
+    .line-draw {
+        top: 288px;
+    }
+
+    .line {
+        top: 356px;
+    }
+
+    .dot {
+        bottom: 100px;
+    }
+
+    /* -----------Last------------- */
+    .lpline {
+        bottom: 230px;
+    }
+
+    .contact-text {
+        bottom: 160px;
+    }
+
+    .subtext-contact {
+        bottom: 127px;
+    }
+
+    .positions {
+        bottom: 50px;
+    }
+
+    /* ---------------------------- */
+
+
+}
+
+@media screen and (max-width: 1366px) {
+    .spacings img.gap-in-icon {
+        margin: 0px;
+    }
+
+    .menu-logo {
+        height: 120px;
+        width: 350px;
+    }
+
+
+}
+
+@media screen and (max-width: 1280px) {
+    .menu-list {
+        margin-left: 60px;
+    }
+
+    .menus ul li {
+        font-size: 45px;
+    }
+
+    .spacings {
+        padding: 20px 0;
+    }
+
+    .social-link a {
+        font-size: 15px;
+    }
+
+
+}
