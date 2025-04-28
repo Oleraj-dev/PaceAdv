@@ -1,8 +1,14 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-    gsap.registerPlugin(Flip, ScrollTrigger, Observer, ScrollToPlugin, Draggable, MotionPathPlugin, EaselPlugin, PixiPlugin, TextPlugin, RoughEase, ExpoScaleEase, SlowMo, CustomEase)
-    let sections = gsap.utils.toArray(".slide");
-    gsap.to(sections, {
-        xPercent: -100 * (sections.length - .35),
+    gsap.registerPlugin(
+        Flip, ScrollTrigger, Observer, ScrollToPlugin, Draggable,
+        MotionPathPlugin, EaselPlugin, PixiPlugin, TextPlugin,
+        RoughEase, ExpoScaleEase, SlowMo, CustomEase
+    );
+
+    const sections = gsap.utils.toArray(".slides");
+
+    const scrollTween = gsap.to(sections, {
+        xPercent: -100 * (sections.length - 0.16),
         ease: "none",
         scrollTrigger: {
             trigger: ".horizontal-sliders",
@@ -12,5 +18,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
             end: "+=3000",
         }
     });
-});
 
+});

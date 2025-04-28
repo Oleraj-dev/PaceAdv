@@ -10,6 +10,11 @@
         width: 100%;
         object-fit: cover;
     }
+    /* ------------Contact---------- */
+    .work-bg img{
+        height: 100%;
+    }
+
 }
 
 @media screen and (max-width: 1920px) {
@@ -17,6 +22,10 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+    }
+    /* ------------Contact---------- */
+    .work-bg img{
+        height: 100%;
     }
 }
 
@@ -49,7 +58,7 @@
         margin: 0 10px;
     }
 
-    /* ----------------- */
+    /* -------Homepage---------- */
     .home-bg {
         height: 100%;
     }
@@ -72,7 +81,7 @@
         bottom: 100px;
     }
 
-    /* ------------------------ */
+    /* -----------Last------------- */
     .lpline {
         bottom: 230px;
     }
@@ -88,6 +97,10 @@
     .positions {
         bottom: 50px;
     }
+
+    /* ---------------------------- */
+
+
 }
 
 @media screen and (max-width: 1366px) {
@@ -99,6 +112,8 @@
         height: 120px;
         width: 350px;
     }
+
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -117,83 +132,6 @@
     .social-link a {
         font-size: 15px;
     }
+
+
 }
-
-/* --------------Main Responsive------------- */
-/* Over Boundey----- */
-/* @media screen and (min-width: 1920px) and (min-height: 1080px) {
-    body {
-        background-color: lightgray;
-    }
-} */
-
-/* Given Screen Size --------- */
-/* @media screen and (width: 1920px) and (height: 1080px) {
-
-    body {
-        background-color: lightblue;
-    }
-
-    .your-class {
-        font-size: 18px;
-    }
-}
-@media screen and (width: 1080px) and (height: 810px) {
-
-    body {
-        background-color: rgb(218, 18, 191);
-    }
-
-    .your-class {
-        font-size: 18px;
-    }
-} */
-
-/* ---------Other Responsive ---------- */
-/* @media screen and (width: 1920px) and (min-height: 900px) and (max-height: 1079px) {
-    
-    body {
-        background-color: rgb(173, 230, 187);
-    }
-
-    .your-class {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 1920px) and (max-height: 1080px) {
-    body {
-        background-color: rgb(198, 173, 230);
-    }
-
-    .your-class {
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 1440px) and (max-height: 900px) {
-    body {
-        background-color: rgb(201, 63, 86);
-    }
-
-    .your-class {
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 1366px) and (max-height: 768px) {
-    body {
-        background-color: rgb(187, 201, 63);
-    }
-
-    .your-class {
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 1280px) and (max-height: 720px) {
-    body {
-        background-color: rgb(63, 169, 201);
-    }
-
-    .your-class {
-        font-size: 18px;
-    }
-} */

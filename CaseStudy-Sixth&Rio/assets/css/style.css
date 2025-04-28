@@ -1,41 +1,36 @@
 /* Light */
 @font-face {
     font-family: 'Neue Haas Grotest';
-    src: url('assets/fonts/NHaasGroteskDSPro-45Lt.otf') format('otf');
+    src: url('../fonts/NHaasGroteskDSPro-45Lt.otf') format('opentype');
     font-weight: 300;
-    font-style: light;
 }
 
 /* Regular */
 @font-face {
     font-family: 'Neue Haas Grotest';
-    src: url('assets/fonts/NHaasGroteskDSPro-55Rg.otf') format('otf');
+    src: url('../fonts/NHaasGroteskDSPro-55Rg.otf') format('opentype');
     font-weight: 400;
-    font-style: normal;
 }
 
 /* Medium */
 @font-face {
     font-family: 'Neue Haas Grotest';
-    src: url('assets/fonts/NHaasGroteskDSPro-65Md.otf') format('otf');
+    src: url('../fonts/NHaasGroteskDSPro-65Md.otf') format('opentype');
     font-weight: 500;
-    font-style: Medium;
 }
 
 /* Semi Bold */
 @font-face {
     font-family: 'Neue Haas Grotest';
-    src: url('assets/fonts/NHaasGroteskDSPro-65Md.otf') format('otf');
+    src: url('../fonts/NHaasGroteskDSPro-65Md.otf') format('opentype');
     font-weight: 600;
-    font-style: normal;
 }
 
 /* Bold */
 @font-face {
     font-family: 'Neue Haas Grotest';
-    src: url('assets/fonts/NHaasGroteskDSPro-75Bd.otf') format('otf');
+    src: url('../fonts/NHaasGroteskDSPro-75Bd.otf') format('opentype');
     font-weight: 700;
-    font-style: normal;
 }
 
 * {
@@ -587,7 +582,7 @@ img.fullImage {
     font-weight: 400;
     color: #24282A;
     line-height: 48px;
-    width: 600px;
+    width: 580px;
     position: relative;
 }
 
@@ -604,7 +599,7 @@ img.fullImage {
 }
 
 .challange-text p {
-    width: 602px;
+    width: 550px;
 }
 
 .amrit-image {
@@ -614,7 +609,6 @@ img.fullImage {
 .amrit-solution {
     position: relative;
     width: calc(474px + 655px);
-    ;
 }
 
 .rect {
@@ -644,7 +638,7 @@ img.fullImage {
     font-weight: 400;
     color: #24282A;
     line-height: 48px;
-    width: 655px;
+    width: 620px;
 }
 
 .start-solution {
