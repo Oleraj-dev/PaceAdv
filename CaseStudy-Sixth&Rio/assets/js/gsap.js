@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         RoughEase, ExpoScaleEase, SlowMo, CustomEase
     );
 
-    const sections = gsap.utils.toArray(".slide");
+    const sections = gsap.utils.toArray(".slides");
 
     const scrollTween = gsap.to(sections, {
         xPercent: -100 * (sections.length - 0.001),

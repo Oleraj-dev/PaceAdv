@@ -542,7 +542,7 @@ html {
 
 .work-text-info {
     margin-left: 65px;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 .work-text-info .t1,
@@ -696,7 +696,7 @@ html {
     color: #24282A;
     font-weight: 400;
     position: absolute;
-    top: 130px;
+    top: 125px;
     left: 187px;
 }
 .studio-line{
